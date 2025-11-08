@@ -1,45 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Arclands</title>
-    <link rel="stylesheet" href="assets/style/home.css">
+  <link rel="stylesheet" href="assets/style/home.css" />
 </head>
-
-
 <body>
-<header>
-
   <div class="container">
-<div class="border">
-    <div class="logo"> </div>
+    <div class="border">
 
-    <nav>
-      <a href="#" class="active">Trailer</a>
-      <a href="#">About</a>
-      <a href="#">Contest</a>
-      <a href="#">Contact</a>
-    </nav>
-    <main>
-      <iframe src="https://www.youtube.com/embed/WUQb03Aw4to" frameborder="0" allowfullscreen></iframe>
+      <!-- LOGO -->
+      <div class="logo"></div>
 
-      <div class="description">
-        <h2>Survive and establish your city</h2>
-        <p>Being the Head Wizard of a settlement is not easy. Create a buzzing village and become a powerful enough wizard to defend it in this RPG inspired city builder!</p>
-        
-<button class="custom-button">
-  <span class="arrow-box">
-    <img src="assets/images/divisa-para-baixo.png" alt="Seta" />
-  </span>
-  <span class="button-text">MORE ABOUT ARCLANDS</span>
-</button>
+      <!-- navegação -->
+      <nav class="main-nav">
+        <a href="#" class="active">Trailer</a>
+        <a href="#">About</a>
+        <a href="#">Contest</a>
+        <a href="#">Contact</a>
+      </nav>
 
-  
-</div>
+      <!-- conteúdo principal -->
+      <main>
+        <section class="trailer-section">
+          <iframe src="https://www.youtube.com/embed/WUQb03Aw4to" frameborder="0" allowfullscreen></iframe>
 
-     </div>   
+          <div class="description">
+            <h2>Survive and establish your city</h2>
+            <p>Being the Head Wizard of a settlement is not easy. Create a buzzing village and become a powerful enough
+              wizard to defend it in this RPG inspired city builder!</p>
+
+            <button class="custom-button">
+              <span class="arrow-box">
+                <img src="assets/images/divisa-para-baixo.png" alt="Seta" />
+              </span>
+              <span class="button-text">MORE ABOUT ARCLANDS</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="about-section">
+          <h2>About Arclands</h2>
+        <div class="about-cards">
+    <div class="about-card">
+      <div class="image-container">
+        <img src="assets/images/aboutvillage.png" alt="Village">
+        <div class="image-banner">
+          <h3>Build Your RPG Village</h3>
+        </div>
       </div>
-    </main>
+      <ul>
+        <li>Design and build your dream RPG village</li>
+        <li>Ensure a thriving economy and keep your citizens happy</li>
+        <li>Attract more citizens and grow your village to a mighty city</li>
+      </ul>
+    </div>
 
+    <div class="about-card">
+      <div class="image-container">
+        <img src="assets/images/aboutdefend.png" alt="Defend">
+        <div class="image-banner">
+          <h3>Defend Against Evil</h3>
+        </div>
+      </div>
+      <ul>
+        <li>Learn mighty spells and blast enemies away</li>
+        <li>Defend your settlement with many different traps and towers</li>
+        <li>Recruit a diverse set of Soldiers with unique strengths and weaknesses</li>
+      </ul>
+    </div>
+
+    <div class="about-card">
+      <div class="image-container">
+        <img src="assets/images/aboutexplore.png" alt="Explore">
+        <div class="image-banner">
+          <h3>Explore the Arclands</h3>
+        </div>
+      </div>
+      <ul>
+        <li>Uncover rare resources and artefacts and bring them back home</li>
+        <li>Find inhabitants that want to join your village and recruit them</li>
+        <li>Explore three biomes with different treasure, enemies and secrets</li>
+      </ul>
+    </div>
+  </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+</body>
 </html>
