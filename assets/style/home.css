@@ -238,10 +238,10 @@ iframe {
 .about-card {
   background-color: #fffaf4;
   border: 2px solid #f2e7e1;
-  border-radius: 12px;
+  border-radius: 15px;
   overflow: hidden;
   flex: 1;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -249,6 +249,30 @@ iframe {
 .about-card:hover {
   transform: scale(1.02);
 }
+
+.about-card ul {
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 20px;
+
+}
+
+.about-card ul li {
+  color: #555151;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 15px 35px;
+  border-bottom: 2px solid #f2e7e1;
+  margin-bottom: 0;
+}
+
+.about-card ul li:last-of-type {
+  border-bottom: none;
+
+}
+
 
 /* imagem e banner azul */
 .image-container {
@@ -259,6 +283,111 @@ iframe {
   width: 100%;
   display: block;
   object-fit: cover;
-  border-bottom: 2px solid #f2e7e1;
+
+}
+
+.image-banner-container {
+  position: relative;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  margin-bottom: -380px;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 2280px;
+  display: block;
+}
+
+/* Seção Fan Art */
+
+.fanart-flex {
+  display: flex;
+  gap: 200px;
+  align-items: flex-start;
+  margin-top: 80px;
+}
+
+.fanart-flex .fanart-img img {
+  position: relative;
+  width: 580px;
+  height: 370px;
+  border-radius: 8px;
+  border: none;
+  left: 50px;
+}
+
+.description-art {
+  position: relative;
+  max-width: 570px;
+  right: 50px;
+  margin-top: 30px;
+}
+
+.description-art h2 {
+  font-weight: 900;
+  font-size: 1.9rem;
+  margin-bottom: 30px;
+  color: #476A8C;
+}
+
+.description-art p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #645F5F;
+  margin-bottom: 40px;
+}
+
+
+/* BOTÃO FAN ART - versão correta com metade clara e metade escura */
+.custom-button-fanart {
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Varela', sans-serif;
+  padding: 0;
+  background: none;
+  font-weight: 400;
+  user-select: none;
+  font-size: 0.9rem;
+  border-bottom: 4px solid #30475E;
+}
+
+.pincel-box {
+  background-color: #5a84ac;
+  padding: 23.5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pincel-box img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.button-text-fanart {
+  background-color: #476A8C;
+  color: #FFFBF4;
+  padding: 25px 35px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-button-fanart:hover .pincel-box {
+  background-color: #476A8C;
+  transition: all ease .2s;
+}
+
+.custom-button-fanart:hover .button-text-fanart {
+  background-color: #5a84ac;
+  transition: all ease .2s;
 }
 
