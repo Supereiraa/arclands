@@ -17,15 +17,15 @@
 
       <!-- navegação -->
       <nav class="main-nav">
-        <a href="#" class="active">Trailer</a>
-        <a href="#">About</a>
-        <a href="#">Contest</a>
-        <a href="#">Contact</a>
+        <a href="#trailer" class="active">Trailer</a>
+        <a href="#about">About</a>
+        <a href="#contest">Contest</a>
+        <a href="#contact">Contact</a>
       </nav>
 
       <!-- conteúdo principal -->
       <main>
-        <section class="trailer-section">
+        <section id="trailer" class="trailer-section">
           <iframe src="https://www.youtube.com/embed/WUQb03Aw4to" frameborder="0" allowfullscreen></iframe>
 
           <div class="description">
@@ -42,7 +42,7 @@
           </div>
         </section>
 
-        <section class="about-section">
+        <section id ="about" class="about-section">
           <h2>About Arclands</h2>
           <div class="about-cards">
             <div class="about-card">
@@ -92,9 +92,9 @@
           </div>
         </section>
 
-        <section class="fanart-flex">
+        <section id = "contest" class="fanart-flex">
           <div class="fanart-img">
-          <img src="assets/images/fanart.png" alt="Fan Art" />
+            <img src="assets/images/fanart.png" alt="Fan Art" />
           </div>
           <div class="description-art">
             <h2>Arclands Fan Art Contest</h2>
@@ -110,37 +110,60 @@
           </div>
         </section>
 
-        <section class = "subscribe">
+
+        <section id = contact class="subscribe">
           <h2>Want to stay up to date?</h2>
-          <div class="description-subscribe">
-            <p>Consider subscribing to the Arclands newsletter! You will be the first one to get updated on development, 
-              the release date and all around important news. You can also join the Discord community or follow on any of the 
-              channels linked below! You can reach me via E-Mail at <a href= "mailto:jon@arclands.de"> jon@arclands.de.</p>
 
-                <!-- FALTA COLOCAR OS ICONES DAS REDES SOCIAIS -->
-          </div>
+          <div class="subscribe-content">
+            <div class="description-subscribe">
+              <p>
+                Consider subscribing to the Arclands newsletter! You will be the first one to get updated on
+                development,
+                the release date and all around important news. You can also join the Discord community or follow on any
+                of the
+                channels linked below! You can reach me via E-Mail at
+                <a href="mailto:jon@arclands.de">jon@arclands.de</a>.
+              </p>
 
-          <div class = "formulario">
-            <div class="name">
-              <input placeholder="Name" type = "text" name = "NAME" >
+              
+              <div class="social-icons">
+                <a href="https://x.com/jonkellerdev" target="_blank"><img src="assets/images/twitter.png" alt="Twitter"></a>
+                <a href="https://jonkeller.itch.io/arclands" target="_blank"><img src="assets/images/itch-io.png" alt="Itch Io"></a>
+                <a href="https://discord.com/invite/TeCwavT" target="_blank"><img src="assets/images/discord.png" alt="Discord"></a>
+                <a href="https://store.steampowered.com/agecheck/app/1462160/" target="_blank"><img src="assets/images/steam.png" alt="Steam"></a>
+              </div>
             </div>
 
-            <div class="email">
-              <input placeholder="E-mail" type = "email" name = "EMAIL" >
-            </div>
-          </div>
+            <form class="formulario">
+              <input placeholder="Name" type="text" name="NAME" />
+              <input placeholder="E-Mail" type="email" name="EMAIL" />
 
-          <div class = "checkbox">
-            <input type = "checkbox">
-            <p>I've read and understood the <a href= "mailto:jon@arclands.de"> data protection guidelines.</p>
+              <div class="checkbox">
+                <input type="checkbox" id="privacy" />
+                <label for="privacy">
+                  I've read and understood the <a href="/page/dataprotect.html">data protection guidelines.</a>
+                </label>
+              </div>
+
+              <button class="subscribe-button">Subscribe</button>
+            </form>
           </div>
         </section>
+
 
 
       </main>
 
     </div>
+
+    <div class="footer">
+      <a href="/page/dataprotect.html">Imprint & Dataprotection Guidelines</a>
+      <a href="/page/presskit.html">Presskit</a>
+    </div>
+
   </div>
+
+
 </body>
 
 </html>
