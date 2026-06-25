@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arclands</title>
   <link rel="stylesheet" href="assets/style/home.css" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 
 <body>
+  <div id="particles-js"></div>
   <div class="container">
     <div class="border">
 
@@ -26,7 +28,7 @@
       <!-- conteúdo principal -->
       <main>
         <section id="trailer" class="trailer-section">
-          <iframe src="https://www.youtube.com/embed/WUQb03Aw4to" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/WUQb03Aw4to" framesborder="0" allowfullscreen></iframe>
 
           <div class="description">
             <h2>Survive and establish your city</h2>
@@ -47,7 +49,7 @@
           <div class="about-cards">
             <div class="about-card">
               <div class="image-container">
-                <img src="assets/images/aboutvillage.png" alt="Village" />
+                  <img class="about-image" src="assets/images/aboutvillage.png" alt="Village" />
                 <div class="image-banner-container">
                   <img src="assets/images/bannerbuild.png" alt="Banner Azul" class="banner-image" />
                 </div>
@@ -63,7 +65,7 @@
 
             <div class="about-card">
               <div class="image-container">
-                <img src="assets/images/aboutvillage.png" alt="Village" />
+                  <img class="about-image" src="assets/images/aboutdefend.png" alt="Village" />
                 <div class="image-banner-container">
                   <img src="assets/images/bannerdefend.png" alt="Banner Azul" class="banner-image" />
                 </div>
@@ -78,7 +80,7 @@
 
             <div class="about-card">
               <div class="image-container">
-                <img src="assets/images/aboutvillage.png" alt="Village" />
+                  <img class="about-image" src="assets/images/aboutexplore.png" alt="Village" />
                 <div class="image-banner-container">
                   <img src="assets/images/bannerexplore.png" alt="Banner Azul" class="banner-image" />
                 </div>
@@ -111,7 +113,7 @@
         </section>
 
 
-        <section id = contact class="subscribe">
+        <section id="contact" class="subscribe">
           <h2>Want to stay up to date?</h2>
 
           <div class="subscribe-content">
@@ -156,13 +158,28 @@
 
     </div>
 
-    <div class="footer">
-      <a href="/page/dataprotect.html">Imprint & Dataprotection Guidelines</a>
-      <a href="/page/presskit.html">Presskit</a>
-    </div>
+      <div class="footer">
+        <a href="/page/dataprotect.html">Imprint & Dataprotection Guidelines</a>
+        <a href="/page/presskit.html">Presskit</a>
+      </div>
 
   </div>
 
+        <div id="imageModal" class="image-modal">
+      <div class="image-modal-content">
+
+        <button class="image-modal-close">
+          ✕
+        </button>
+
+        <img id="modalImg" src="" alt="">
+
+      </div>
+    </div>
+
+
+        <script src="assets/js/particles-config.js"></script>
+        <script src="assets/js/modal-about.js"></script>
 
 </body>
 
